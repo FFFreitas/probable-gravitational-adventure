@@ -14419,7 +14419,31 @@ div.jp-OutputPrompt {
 <p>My idea is to use the Image-GPT [<a href="https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf">https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf</a>] in addition with the variational quantum circuits (VQC) and Quantum transfer learning [<a href="https://arxiv.org/abs/1912.08278">https://arxiv.org/abs/1912.08278</a>] to boost the searches for BBH merges and neutron stars collisions.</p>
 
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="How-transfer-learning-works-(any-%-speed-run):">How transfer learning works (any % speed run):<a class="anchor-link" href="#How-transfer-learning-works-(any-%-speed-run):">&#182;</a></h1><p><img src="./figs/transfer_learning_general.png" style="width: 550px;"/><figcaption> <font size="3"> Transfer learning scheme </figcaption>&lt;/td&gt;</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="What-about-quantum-computers?">What about quantum computers?<a class="anchor-link" href="#What-about-quantum-computers?">&#182;</a></h1><ul>
+<li>We can build a variational quantum eigensolver (VQE) using near-term quantum computers. The VQE will encode the parameters from a classical NN into a series of quantum operations (quantum gates) that act into a qubit.</li>
+<li>By letting the qubits evolving through time, the final readout of the qubits gives us the optimal values of the parameters which minimize a cost function.<table><tr>
+  <td><img src="./figs/what.gif" style="width: 350px;"/><font size="3">  </figcaption></td>     
+  <td><img src="./figs/VQE2.png" style="width: 850px;"/><figcaption> <font size="3"> variational quantum eigensolver (VQE) </figcaption></td>        
+</tr></table></li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Hybrid-VQE-model:">Hybrid VQE model:<a class="anchor-link" href="#Hybrid-VQE-model:">&#182;</a></h1><p><img src="./figs/qnn2_torch.png" style="width: 1050px;"/><figcaption> <font size="3"> Hybrid model </figcaption>&lt;/td&gt;</p>
+
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>For that I built the Image-QGPT following the guidelines from the Xanadu tutorial [<a href="https://pennylane.ai/qml/demos/tutorial_quantum_transfer_learning.html">https://pennylane.ai/qml/demos/tutorial_quantum_transfer_learning.html</a>] and the Image-GPT model from pytoch-lightning [<a href="https://pytorch-lightning-bolts.readthedocs.io/en/latest/convolutional.html#image-gpt">https://pytorch-lightning-bolts.readthedocs.io/en/latest/convolutional.html#image-gpt</a>].</p>
@@ -14428,7 +14452,7 @@ div.jp-OutputPrompt {
 <p>youtube lectures -&gt; <a href="https://www.youtube.com/watch?v=XaPgerHh8T4">https://www.youtube.com/watch?v=XaPgerHh8T4</a></p>
 
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Extras:">Extras:<a class="anchor-link" href="#Extras:">&#182;</a></h4>
